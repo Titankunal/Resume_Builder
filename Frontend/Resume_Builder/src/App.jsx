@@ -11,7 +11,7 @@ const App = () => {
           {/* Default Route*/}
           <Route path='/' element={<LandingPage />}/>
             
-          <Route path='/login' element={<login />}/>
+          <Route path="/login" element={<login />}/>
           <Route path='/signup' element={<signup />}/>
 p
 

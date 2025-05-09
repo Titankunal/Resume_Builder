@@ -6,18 +6,7 @@ import LandingPage from './pages/LandingPage';
 const App = () => {
   return (
     <div>
-      <Router>
-        <Routes>
-          {/* Default Route*/}
-          <Route path='/' element={<LandingPage />}/>
-            
-          <Route path='/Login' element={<Login/>}/>
-          <Route path='/Signup-' element={<Signup/>}/>
-          <Route path='/Dashbord' element={<Dashbord />}/>
-
-
-        </Routes>
-      </Router>
+      App
     </div>
     
   )

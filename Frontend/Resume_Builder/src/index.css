@@ -49,7 +49,7 @@
 }
 
 .input-box{
-  @apply w-full flex justify-between gap-3 text-sn text-black bg-gray-50/50 rounded-px4 py3 mb-4 mt-3 border border-gray-100 outline-none focus-within:border-purple-300;
+  @apply w-full flex justify-between gap-3 text-sn text-black bg-gray-50/50 rounded-px4 py-3 mb-4 mt-3 border border-gray-100 outline-none focus-within:border-purple-300;
 }
 
 .btn-primary{

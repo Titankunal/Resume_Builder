@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import LandingPage from './pages/LandingPage';
 
+
 const App = () => {
   return (
     <div>
@@ -10,7 +11,8 @@ const App = () => {
         <Routes>
           {/* Default Route*/}
           <Route path='/' element={<LandingPage />}/>
-          <Route path='/Dashbord' element={<Dashbord />}/>
+          <Route path='/' element={<LandingPage />}/>
+         
           <Route path='/resume/:resumeId' element={<EditResume />}/>
         </Routes>
       </Router>

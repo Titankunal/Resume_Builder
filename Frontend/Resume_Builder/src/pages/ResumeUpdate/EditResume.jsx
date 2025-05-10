@@ -6,4 +6,4 @@ const EditResume = () => {
   )
 }
 
-export default EditResume
+export default EditResume;

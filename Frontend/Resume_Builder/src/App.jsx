@@ -8,6 +8,7 @@ import EditResume from './pages/ResumeUpdate/EditResume';
 
 const App = () => {
   return (
+    <>
     <div>
       <Router>
         <Routes>
@@ -19,8 +20,19 @@ const App = () => {
         </Routes>
       </Router>
     </div>
+
+    <Toaster
+      toastOptions={{
+        className: "",
+        style:{
+          fontSize: "13px",
+        },
+      }}
     
-  )
-}
+    />
+
+    </>
+  );
+};
 
 export default App

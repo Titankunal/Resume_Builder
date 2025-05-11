@@ -1,6 +1,6 @@
 import React, { use, useState } from 'react'
 // import image
-import {userNavigate} from 'react-router-dom'
+import { userNavigate } from 'react-router-dom'
 
 
 const LandingPage = () => {

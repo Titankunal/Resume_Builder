@@ -11,7 +11,7 @@ const LandingPage = () => {
 
   const handleCTA = () => {};
   return (
-    <div>
+    <div className='w-full min-h-full bg-white'>
       <div className='container mx-auto px-4 py-6'>
         {/* Header */}
         <header className='flex justify-between items-center mb-16'>
@@ -22,6 +22,12 @@ const LandingPage = () => {
             Login / Sign Up
           </button>
         </header>
+
+        {/* Hero Content */}
+        <div className='flex flex-col md:flex-row items-center'>-
+        </div>
+
+
       </div>
     </div>
   )

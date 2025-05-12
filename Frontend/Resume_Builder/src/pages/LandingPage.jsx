@@ -1,6 +1,7 @@
 import React, { use, useState } from 'react'
 // import image
 import { useNavigate } from 'react-router-dom'
+import login from './Auth/login';
 
 
 const LandingPage = () => {
@@ -11,7 +12,7 @@ const LandingPage = () => {
 
   const handleCTA = () => {};
   return (
-    <div className='w-full min-h-full bg-white pb-96 '>
+    <div className='w-full min-h-full bg-white'>
       <div className='container mx-auto px-4 py-6'>
         {/* Header */}
         <header className='flex justify-between items-center mb-16'>
@@ -77,15 +78,34 @@ const LandingPage = () => {
             </div>
 
             <div className='bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition'>
-              <h3 className='text-lg font-semibold mb-3'>
+              <h3 className='text-lg font-semibold mb-3'>export in a click
               </h3>
               <p className='text-gray-600'>
-                Download your ihigh quality resume in .pdf with an ease
+                Download your high quality resume in .pdf with an ease
               </p>
             </div>
           </div>
         </section>
+
+        <div className='text-sm bg-gray-50 text-secondary text-center p-5 mt-5'>
+          made with cum happy coding
+        </div>
       </div>
+
+      <Modal 
+        isOpen = {openAuthModal}
+        onClose = {() => {
+          setOpenAuthModal(false)
+          setCurrentPage("login")
+        }}
+        hideHeader
+      >
+        <div className=''>
+          {currentPage === "login" && <Login setCurrentPage={setCurrentPage} />}
+          {currentPage === "login"
+          }
+        </div>
+      </Modal>
     </div>
   )
 }

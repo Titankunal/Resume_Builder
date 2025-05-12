@@ -1,10 +1,10 @@
 import React, { use, useState } from 'react'
 // import image
-import { userNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 const LandingPage = () => {
-  const navigate =userNavigate();
+  const navigate =useNavigate();
   
   const [openAuthModal, setOpenAuthModal] = useState(false);
   const [currentPage, setCurrentPage] = useState("login");
@@ -17,7 +17,7 @@ const LandingPage = () => {
         <header className='flex justify-between items-center mb-16'>
           <div className='text-xl font-bold'> Create Yourself </div>
           <button className='bg-purple-100 text-sm font-semibold text-black px-7 py-2.5 rounded-lg hover:text-white transition-colors cursor-pointer'
-            onclick={() => setOpenAuthModal(true)}
+            onClick={() => setOpenAuthModal(true)}
           >
             Login / Sign Up
           </button>
@@ -37,7 +37,7 @@ const LandingPage = () => {
               we will do the job and you will find the command panel.
             </p>
             <button className='bg-black text-sm font-semibold text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors cursor-pointer'
-            onclick={handleCTA}
+            onClick={handleCTA}
             >
               Go Ahead
             </button>

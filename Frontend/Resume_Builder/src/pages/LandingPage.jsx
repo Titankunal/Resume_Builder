@@ -1,7 +1,8 @@
 import React, { use, useState } from 'react'
 // import image
 import { useNavigate } from 'react-router-dom'
-import login from './Auth/login';
+import Login from './Auth/login';
+
 
 
 const LandingPage = () => {
@@ -92,7 +93,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <Modal 
+      {/* <Modal 
         isOpen = {openAuthModal}
         onClose = {() => {
           setOpenAuthModal(false)
@@ -105,7 +106,7 @@ const LandingPage = () => {
           {currentPage === "login"
           }
         </div>
-      </Modal>
+      </Modal> */}
     </div>
   )
 }

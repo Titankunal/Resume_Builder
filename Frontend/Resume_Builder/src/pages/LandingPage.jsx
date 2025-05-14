@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Form, useNavigate } from 'react-router-dom';
+import myimage from '../assets/001.png'
 import Login from './Auth/login';
 
 const LandingPage = () => {
@@ -18,7 +19,7 @@ const LandingPage = () => {
       <div className='container mx-auto px-4 py-6'>
         {/* Header */}
         <header className='flex justify-between items-center mb-16'>
-          <div className='text-xl font-bold'>Create Yourself</div>
+          <div className='text-xl font-bold'>Create CV</div>
           <button
             className='bg-purple-100 text-sm font-semibold text-black px-7 py-2.5 rounded-lg hover:text-white transition-colors cursor-pointer'
             onClick={() => setOpenAuthModal(true)}
@@ -50,8 +51,8 @@ const LandingPage = () => {
           <div className='w-full md:w-1/2'>
             {/* Use a placeholder or actual image path */}
             <img
-              src="https://via.placeholder.com/400x300"
-              alt="Hero"
+              src={myimage}
+              alt="myimage"
               className='w-full rounded-lg'
             />
           </div>

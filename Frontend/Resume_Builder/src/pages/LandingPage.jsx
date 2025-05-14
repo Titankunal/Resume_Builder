@@ -92,7 +92,6 @@ const LandingPage = () => {
         </div>
       </div>
 
-      {/* Modal (optional: activate when modal component is ready) */}
       
       <Modal 
         isOpen={openAuthModal}
@@ -104,6 +103,9 @@ const LandingPage = () => {
       >
         <div>
           {currentPage === "login" && <Login setCurrentPage={setCurrentPage} />}
+          {currentPage === "signup" &&(
+            <Signup setCurrentPage={setCurrentPage} />
+          )}
         </div>
       </Modal> 
      

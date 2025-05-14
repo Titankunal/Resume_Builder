@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Form, useNavigate } from 'react-router-dom';
 import myimage from '../assets/001.png'
 import Login from './Auth/login';
+import Modal from '../components/Modal';
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -49,7 +50,7 @@ const LandingPage = () => {
           </div>
 
           <div className='w-full md:w-1/2'>
-            {/* Use a placeholder or actual image path */}
+            
             <img
               src={myimage}
               alt="myimage"
@@ -92,7 +93,7 @@ const LandingPage = () => {
       </div>
 
       {/* Modal (optional: activate when modal component is ready) */}
-      {/* 
+      
       <Modal 
         isOpen={openAuthModal}
         onClose={() => {
@@ -105,7 +106,7 @@ const LandingPage = () => {
           {currentPage === "login" && <Login setCurrentPage={setCurrentPage} />}
         </div>
       </Modal> 
-      */}
+     
     </div>
   );
 };

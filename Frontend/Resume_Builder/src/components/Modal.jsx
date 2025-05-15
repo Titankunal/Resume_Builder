@@ -11,7 +11,7 @@ const Modal = ({children,
     onActionClick,
 }) => {
   return (
-    <div>Modal</div>
+    <div className=''></div>
   )
 }
 

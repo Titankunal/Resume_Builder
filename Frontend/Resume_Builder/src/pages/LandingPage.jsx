@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import { Form, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import myimage from '../assets/001.png'
 import Login from './Auth/login';
+import Signup from './Auth/signup'
 import Modal from '../components/Modal';
 
 const LandingPage = () => {
   const navigate = useNavigate();
   
-  const [openAuthModal, setOpenAuthModal] = useState(false);
+  const [openAuthModal, setOpenAuthModal] = useState(true);
   const [currentPage, setCurrentPage] = useState("login");
 
   const handleCTA = () => {
@@ -62,17 +63,17 @@ const LandingPage = () => {
         {/* Services Section */}
         <section className='mt-5'>
           <h2 className='text-2xl font-bold text-center mb-12'>
-            Here are some Services
+            Here some Services
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             <div className='bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition'>
-              <h3 className='text-lg font-semibold mb-3'>Easy-Peasy</h3>
+              <h3 className='text-lg font-semibold mb-3'>Easy Edit</h3>
               <p className='text-gray-600'>
                 Update your resume with new skills and formatting
               </p>
             </div>
             <div className='bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition'>
-              <h3 className='text-lg font-semibold mb-3'>Honorable Templates</h3>
+              <h3 className='text-lg font-semibold mb-3'>Attractive Templates</h3>
               <p className='text-gray-600'>
                 Choose modern, professional templates to shine
               </p>

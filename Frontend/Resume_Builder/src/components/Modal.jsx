@@ -10,9 +10,8 @@ const Modal = ({children,
     actionBtnText,
     onActionClick,
 }) => {
-  return (
-    <div className=''></div>
-  )
+  return <div className=''></div>
+  
 }
 
 export default Modal

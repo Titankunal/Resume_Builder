@@ -11,17 +11,14 @@ const LandingPage = () => {
   const [openAuthModal, setOpenAuthModal] = useState(true);
   const [currentPage, setCurrentPage] = useState("login");
 
-  const handleCTA = () => {
-    // Navigate or open modal
-    console.log("CTA clicked");
-  };
+  const handleCTA = () => {};
 
   return (
     <div className='w-full min-h-full bg-white'>
       <div className='container mx-auto px-4 py-6'>
         {/* Header */}
         <header className='flex justify-between items-center mb-16'>
-          <div className='text-xl font-bold'>Create CV</div>
+          <div className='text-xl font-bold'>MeMyself</div>
           <button
             className='bg-purple-100 text-sm font-semibold text-black px-7 py-2.5 rounded-lg hover:text-white transition-colors cursor-pointer'
             onClick={() => setOpenAuthModal(true)}
@@ -89,7 +86,7 @@ const LandingPage = () => {
 
         {/* Footer */}
         <div className='text-sm bg-gray-50 text-secondary text-center p-5 mt-5'>
-          made with ❤️ — happy coding
+          made with ❤️ — KunalHere
         </div>
       </div>
 

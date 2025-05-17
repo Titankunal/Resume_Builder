@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import  from '../../components/input/input';
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -32,19 +33,18 @@ const Login = () => {
         <input
           type="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
+          onChange={({target}) => setEmail(target.value)}
+          label="Email Address"
+          placeholder="johncena@gmail.com"
           required
-          className='w-full border p-2 rounded'
-        />
+          />
 
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
+          placeholder="ag.sdj-h"
           required
-          className='w-full border p-2 rounded'
         />
 
         <button type='submit' className='btn-primary'>

@@ -46,6 +46,8 @@ const Modal = ({children,
           />
         </svg>
       </button>
+
+      {/* Modal Body */}
     </div>
   </div>
   

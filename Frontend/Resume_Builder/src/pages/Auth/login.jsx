@@ -8,15 +8,25 @@ const Login = () => {
 
   const navigate = useNavigate();
 
+  // Handle Login From Submit
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    if (email === "admin@example.com" && password === "password123") {
-      setError(null);
-      navigate('/dashboard');
-    } else {
-      setError("Invalid email or password");
+    if (!validateEmail(email)) {
+      setError("Enter a valid Email address");
+      return;
+    } 
+
+    if(!password){
+      setError("Please enter the password");
+      return;
     }
+
+    setError("");
+    
+    // Login API call
+    try {
+    } caches(error)
   };
 
   return (
@@ -32,7 +42,7 @@ const Login = () => {
             type="email"
             value={email}
             onChange={({ target }) => setEmail(target.value)}
-            placeholder="johncena@gmail.com"
+            placeholder="info@gmail.com"
             required
             className='w-full border border-gray-300 rounded px-3 py-2 mb-4'
           />
@@ -41,7 +51,7 @@ const Login = () => {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="ag.sdj-h"
+            placeholder="min 8 character."
             required
             className='w-full border border-gray-300 rounded px-3 py-2 mb-4'
           />

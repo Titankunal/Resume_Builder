@@ -26,7 +26,7 @@ const Login = () => {
     
     // Login API call
     try {
-    } caches(error)
+    } catch(error){
   };
 
   return (
@@ -74,5 +74,6 @@ const Login = () => {
     </div>
   );
 };
+}
 
 export default Login;
